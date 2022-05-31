@@ -1,0 +1,26 @@
+// Breakpoint - responsywnosc
+$bp-small: '576px';
+$bp-medium: '960px';
+$bp-large: '1440px';
+
+
+//tablety
+@mixin small-up {
+    @media screen and (min-width: #{$bp-small}){
+        @content
+    }
+}
+
+//Komputery
+@mixin medium-up {
+    @media screen and (min-width: #{$bp-medium}){
+        @content
+    }
+}
+
+//Komputery
+@mixin large-up {
+    @media screen and (min-width: #{$bp-large}){
+        @content
+    }
+}

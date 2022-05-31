@@ -1,0 +1,35 @@
+.attributes-first{
+    background-image: url('/src/img/attributesBig.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    &__heading{
+        text-transform: uppercase;
+        line-height: 5rem;
+        font-size: $font-size-11;
+        color: $white;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.3rem;
+    }
+
+    &__border{
+        border: 1px solid #ffffff;
+        width: 80%;
+        margin: 3% auto;
+    }
+}
+
+
+.attributes-container{
+    padding: 5%;
+}
+
+.circle{
+    width: 47px;
+    height: 47px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}

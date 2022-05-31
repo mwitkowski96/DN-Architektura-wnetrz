@@ -1,0 +1,30 @@
+@import './src/sass/_mixins.scss';
+@import './src/sass/01-settings/_settings.scss';
+@import './src/sass/04-elements/_elements.scss';
+@import './src/sass/06-objects/_objects.scss';
+@import './src/sass/03-components/_components.scss';
+
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}

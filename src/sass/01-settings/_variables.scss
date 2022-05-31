@@ -1,0 +1,45 @@
+//Kolory
+
+$white: #fff;
+$dark-text: #251919;
+$hamburger: #494747;
+
+$glass: rgba(255, 255, 255, 0.5);
+
+
+// Tekst
+$font-size-base: 1rem; //wartość bazowa
+$font-size-1: $font-size-base * 6; //~60px
+$font-size-2: $font-size-base * 4; //~40px
+$font-size-3: $font-size-base * 2.4; //~24px
+$font-size-11: $font-size-base * 2; //~20px
+$font-size-10: $font-size-base * 3; //~30px
+$font-size-3: $font-size-base * 2.5; //~25px
+$font-size-4: $font-size-base * 1.8; //~18px
+$font-size-5: $font-size-base * 1.6; //~16px
+$font-size-6: $font-size-base * 1.4; //~14px
+$font-size-7: $font-size-base * 1.2; //~12px
+$font-size-8: $font-size-base; //~10px
+$font-size-9: $font-size-base * 0.9; //~9px
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+$line-height-base: 1.5; //wartosc bazowa
+$line-height-sm: 1.2; //small
+$line-height-lg: 1.8; //large
+
+$letter-spacing-condensed: -.1rem; //large
+
+// Siatka
+$grid-base: 10px;
+$gutter: $grid-base * 1.5;
+
+//Zaokrąglenia
+$border-radius: $grid-base * 0.5; //5px
