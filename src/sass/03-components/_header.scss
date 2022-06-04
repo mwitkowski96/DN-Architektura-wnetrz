@@ -2,80 +2,200 @@
     background-image: url('/src/img/headersmall.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    background-position: center 20%;
 
-    &-container{
-        position: relative;
-        top: 80%;
-        left: 5%;
-        transform: translateY(-80%);
-        width: 150px;
-        border: 5px solid #c1c1c183;
-        display: flex;
-        align-items: center;
+    &-content{
+        font-size: $font-size-10;
+        color: $white;
+        animation: header-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 0.8) 1s both;
+        display: inline-block;
 
-        &-heading{
-            margin-left: 20px;
+        &__rectangle{
+            object-position: 20px 20px;
+            width: 150px;
+            border: 5px solid #c1c1c183;
+            padding-left: 15px;
         }
 
-        &__title{
-            width: 100%;
-            text-align: left;
-            position: relative;
-            font-size: $font-size-10;
-            font-weight: $font-weight-light;
-            line-height: 60px;
-            color: $white;
-            animation: header-animation 0.8s cubic-bezier(0.215, 0.610, 0.355, 0.8) 1s both;
-        }
-
-        &-subtitle{
-            position: relative;
+        &__signature{
+            font-size: $font-size-8;
             display: block;
-            color: $white;
-            margin-top: 40px;
+            white-space: nowrap;
+            line-height: 40px;
+            font-weight: $font-weight-extra-light;
+            margin-left: 10px;
 
-            &::before{
-                content: '';
-                border-left: 3px solid rgba(255, 255, 255, 0.432);
-                height: 65px;
-                position:absolute;
-                left: -5%;
-                top: 0;
-            }
-
-            &__signature{
-                display: block;
-                margin-top: 10px;
-                margin-bottom: 20px;
-
-            }
         }
+
+        &-bottom::before{
+            content: '';
+            border: 1px solid rgb(255, 255, 255);
+            position: absolute;
+            height: 29%;
+
+        }
+
     }
+
+.container--flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading--level1{
+    line-height: 60px;
+    font-weight: $font-weight-extra-light;
+
+
 }
 
 @keyframes header-animation {
     0% {
-              filter: blur(12px);
-      opacity: 0;
+        filter: blur(12px);
+        opacity: 0;
+        transform: translateX(200px);
     }
     100% {
-              filter: blur(0px);
-      opacity: 1;
+        filter: blur(0px);
+        opacity: 1;
+        transform: translateX(0);
     }
   }
 
-  @include medium-up{
-
-    .header{
-        background-image: url('/src/img/headerbig.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 0 20%;
-        height: 100vh;
-        width: 100%;
-    }
-
 }
 
+
+
+// .header{
+//     background-image: url('/src/img/headersmall.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     height: 100vh;
+
+//     &-container{
+//         position: relative;
+//         top: 80%;
+//         left: 5%;
+//         transform: translateY(-80%);
+//         width: 150px;
+//         border: 5px solid #c1c1c183;
+//         display: flex;
+//         align-items: center;
+//         background-color: lime;
+
+//         &-heading{
+//             margin-left: 20px;
+//         }
+
+//         &__title{
+//             width: 100%;
+//             text-align: left;
+//             position: relative;
+//             font-size: $font-size-3;
+//             font-weight: $font-weight-light;
+//             line-height: 60px;
+//             color: $white;
+//             animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 0.5s;
+//         }
+
+//         &-subtitle{
+//             position: relative;
+//             display: block;
+//             color: $white;
+//             margin-top: 30px;
+//             font-weight: $font-weight-light;
+//             animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1s;
+//             font-size: $font-size-9;
+
+
+
+//             &::before{
+//                 content: '';
+//                 border-left: 3px solid rgba(255, 255, 255, 0.432);
+//                 height: 65px;
+//                 position:absolute;
+//                 left: -5%;
+//                 top: 0;
+//                 animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1.5s;
+//             }
+
+//             &__signature{
+//                 display: block;
+//                 margin-top: 10px;
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+// }
+
+//   @keyframes slide-left {
+//     0% {
+//         opacity: 0;
+//         transform: translateX(50px);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: translateX(0px);
+//     }
+//   }
+
+//   @include small-up{
+
+//   }
+
+//   @include medium-up{
+
+//     .header{
+//         background-image: url('/src/img/headerbig.jpg');
+//         background-position: 0 20%;
+
+//         &-container{
+    
+//             &-heading{
+//                 margin-left: 40px;
+//             }
+    
+//             &__title{
+//                 font-size: $font-size-5;
+//                 font-weight: $font-weight-light;
+//                 line-height: 80px;
+//                 color: $white;
+//             }
+    
+//             &-subtitle{
+//                 margin-top: 2rem;
+//                 font-size: $font-size-7;
+//             }
+//         }
+//     }
+// }
+
+// @include large-up{
+
+//     .header{
+//         background-image: url('/src/img/headerbig.jpg');
+//         background-position: 0 20%;
+
+//         &-container{
+//             width: 250px;
+    
+//             &-heading{
+//                 margin-left: 40px;
+//             }
+    
+//             &__title{
+//                 font-size: $font-size-2;
+//                 font-weight: $font-weight-light;
+//                 line-height: 80px;
+//                 color: $white;
+//             }
+    
+//             &-subtitle{
+//                 margin-top: 80px;
+//                 font-size: $font-size-6;
+//             }
+//         }
+//     }
+// }
