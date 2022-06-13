@@ -1,100 +1,27 @@
-.aboutus{
-    text-align: center;
-
-    &__heading{
-        display:inline-block;
-        text-transform: uppercase;
-        font-size: $font-size-4;
-        font-weight: $font-weight-medium;
-    }
-
-    &__border{
-        border: 1px solid #000000;
-        width: 80%;
-        margin: 3% auto;
-    }
-
-    &__subheading{
-        font-size: $font-size-8;
-        font-weight: $font-weight-light;
-        text-transform: uppercase;
-    }
-}
-
-.aboutus-box{
+.about-us-wrapper{
     display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-info-wrapper{
     width: 100%;
-    padding-top: 5%;
-    overflow: hidden;
-    padding: 5%;
-    
-
-    &-text{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 50%;
-        
-        margin-right: 5%;
-
-        &__paragraph{
-            text-align: left;
-            font-size: $font-size-10;
-            line-height: 25px;
-
-            &--second{
-                display: none;
-            }
-        }
-    }
-
-    &__image{
-        width: 60%;
-        background-color: pink;
-        background-image: url('/dist/img/image5.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-.btn--aboutus{
-    display: block;
-    margin-top: 10%;
-    animation: pulse 2s infinite;
+.about-us-info{
+    color: $dark-text;
+    font-size: $font-size-14;
+    line-height: 25px;
+    padding: 20px;
 }
 
-
-@keyframes pulse {
-  0% {
-    transform: (scale(.9));
-  }
-  70% {
-    transform: (scale(1));
-    box-shadow: 0 0 0 2px rgba(#5a99d4, 0);
-  }
-    100% {
-    transform: (scale(.9));
-    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
-  }
+.about-us-image-wrapper{
+    display: flex;
+    align-items: center;
+    width: 40%;
 }
-
-@include medium-up{
-
-    .aboutus-box-text p{
-        font-size: $font-size-9;
-        line-height: 40px;
-
-    }
-
-    .aboutus-box-text__paragraph--second{
-        display: block;
-    }
-
-    .btn--aboutus{
-        display: none;
-    }
+.about-us-image{
+    width: 100%;
 }
-
-

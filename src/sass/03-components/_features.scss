@@ -1,0 +1,29 @@
+.features{
+    margin: 60px auto;
+    background-image: url('/src/img/featuresBig.jpg');
+    height: 100vh;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.first-feature{
+    position: relative;
+    
+}
+
+.circle{
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    min-width: 47px;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top:0;
+    left:0;
+    margin-left: 10px;
+}

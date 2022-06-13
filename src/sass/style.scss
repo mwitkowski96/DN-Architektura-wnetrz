@@ -7,24 +7,70 @@
 
 
 *,
-*::before,
-*::after {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
-
-html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
-}
-
-img{
-    max-width: 100%;
-}
-
-ul{
+*::after,
+*::before {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+
+textarea {
+    resize: vertical;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.section-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $font-size-44;
+    font-weight: $font-weight-regular;
+    letter-spacing: 13px;
+    text-transform: uppercase;
+
+    &--features{
+        color: $white;
+        padding-top: 60px;
+    }
+}
+
+.section-subtitle{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: $font-size-12;
+    font-weight: $font-weight-light;
+}
+
+.inactive{
+    display: none;
 }
