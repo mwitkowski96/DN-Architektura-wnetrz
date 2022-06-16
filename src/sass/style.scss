@@ -58,6 +58,16 @@ img{
     border-top: 1px solid black;
     width: 70%;
     margin: 0 auto;
+
+    &--feature{
+        width: 90%;
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+
+    &--feature-second{
+        width: 90%;
+        border-top: 1px solid black;
+    }
 }
 
 .section-title{
@@ -71,7 +81,19 @@ img{
 
     &--features{
         color: $white;
-        padding-top: 60px;
+        text-align: left;
+        width: 50%;
+        letter-spacing: 0.13em;
+        line-height: 65px;
+        margin: 20px 0;
+    }
+
+    &--complex{
+        color: $dark-text;
+        text-align: left;
+        width: 50%;
+        margin: 20px 0;
+
     }
 }
 
@@ -84,20 +106,47 @@ img{
     &--aboutus{
         font-size: $font-size-18;
     }
-
 }
 
 .inactive{
     display: none;
 }
 
-@include medium-up{
-
+@include small-up{
     .section-title{
-        font-size: $font-size-44;
+        font-size: $font-size-30;
+
+        &--features{
+            text-align: center;
+            width: 100%;
+            letter-spacing: 0.13em;
+            line-height: 65px;
+        }
+    
+        &--complex{
+            color: $dark-text;
+            text-align: center;
+            width: 100%;
+            letter-spacing: 0.13em;
+            line-height: 65px;
+        }
+
     }
     
     .section-subtitle{
-        font-size: $font-size-20;
+        font-size: $font-size-25;
+    }
+}
+
+
+
+@include medium-up{
+
+    .section-title{
+        font-size: $font-size-40;
+
+        &--features{
+            line-height: 75px;
+        }
     }
 }

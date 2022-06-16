@@ -64,34 +64,44 @@
     margin-left: 10px;
 }
 
-@include medium-up{
+@include small-up{   
     .rectangle{
-        position: absolute;
-        bottom: 35%;
-        left: 10%;
-        transform: translate(-10%, 30%);
         padding: 5px;
-        width: 120px;
+        width: 200px;
         border: 4px solid rgba(193, 193, 193, 0.5);
     }
     
     .header-section-title{
-        position: relative;
-        font-size: $font-size-25;
+        font-size: $font-size-30;
         text-transform: uppercase;
         font-weight: $font-weight-regular;
-        line-height: 55px;
-        margin-bottom: 30px;
+    }
+    
+    .header-section-signature{
+        font-size: $font-size-20;
+        line-height: 40px;
+
+    }
+}
+
+@include medium-up{
+    .rectangle{
+        width: 240px;
+    }
+    
+    .header-section-title{
+        position: relative;
+        font-size: $font-size-40;
+        line-height: 85px;
+        margin-bottom:30px;
         margin-left: 10px;
     }
     
     .header-section-signature{
         display: block;
         width: 100%;
-        font-size: 15px;
+        font-size: $font-size-25;
         font-weight: $font-weight-light;
-        line-height: 40px;
-        margin-left: 10px;
+        line-height: 50px;
     }
-
 }

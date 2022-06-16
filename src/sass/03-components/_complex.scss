@@ -1,0 +1,157 @@
+.complex{
+    background-color: $white;
+    padding: 20px;
+
+    &__box{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 100px 0;  
+    }
+}
+
+.complex-option{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    width: 100%;
+
+    &--reverse{
+        flex-direction: row-reverse;
+    }
+}
+
+.complex-icon{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon-time{
+    background-color: #C4C4C4;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 100%;
+}
+
+.complex-text{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-size: $font-size-12;
+    width: 60%;
+}
+
+@include small-up{
+    .complex{
+        &__box{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 100px 0;  
+        }
+    }
+    
+    .complex-option{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 50%;
+    
+        &--reverse{
+            flex-direction: column;
+        }
+    }
+    
+    .complex-icon{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        
+    }
+    
+    .icon-time{
+        background-color: #C4C4C4;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        border-radius: 100%;
+    }
+    
+    .complex-text{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: $font-size-18;
+        width: 60%;
+        text-align: center;
+    }
+
+}
+
+@include medium-up{
+    .complex{
+        &__box{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 100px 0;  
+        }
+    }
+    
+    .complex-option{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 25%;
+    
+        &--reverse{
+            flex-direction: column;
+        }
+    }
+    
+    .complex-icon{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+
+    }
+    
+    .icon-time{
+        background-color: #C4C4C4;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        border-radius: 100%;
+    }
+    
+    .complex-text{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        font-size: $font-size-18;
+        width: 60%;
+        text-align: center;
+    }
+}

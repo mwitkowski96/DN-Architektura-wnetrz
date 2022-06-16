@@ -1,29 +1,98 @@
 .features{
-    margin: 60px auto;
     background-image: url('/src/img/featuresBig.jpg');
-    height: 100vh;
     background-size: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
+    padding: 20px;
 }
 
-.first-feature{
+.features-box{
     position: relative;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 100px 0;    
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.feature-text{
+    display: flex;
+    width: 50%;
+    color: $white;
+    font-size: $font-size-16;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+}
+
+.icon-box{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
 .circle{
     display: inline-block;
-    width: 47px;
-    height: 47px;
-    min-width: 47px;
-    border: solid 5px rgb(0, 0, 0);
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border: solid 10px rgb(255, 255, 255);
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    top:0;
-    left:0;
-    margin-left: 10px;
+}
+
+@include small-up{
+
+    .features-box{
+        flex-wrap: nowrap;
+    }
+    
+    .feature{
+        flex-direction: column-reverse;
+    }
+    
+    .feature-text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100px;
+    }
+    
+    .icon-box{
+        height: 100px;
+    }
+
+    .circle{
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+        border: solid 10px rgb(255, 255, 255);
+    }
+}
+
+@include medium-up{
+    .features-box{
+        padding: 250px 0;
+        flex-wrap: nowrap;
+    }
+
+    .feature-text{
+        font-size: $font-size-21;
+    }
+
+    .circle{
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        border: solid 13px rgb(255, 255, 255);
+    }
 }

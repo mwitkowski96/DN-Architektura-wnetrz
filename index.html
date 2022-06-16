@@ -29,7 +29,7 @@
         <button class="burger-icon"><img src="/src/img/menuIcon.svg" alt=""></button>
         <ul class="menu__list">
             <li class="list__item">
-                <a class="item__link" href="#">O nas</a>
+                <a class="item__link" href="#aboutus">O nas</a>
             </li>
             <li class="list__item">
                 <a class="item__link" href="#">Portfolio</a>
@@ -68,7 +68,7 @@
 </header>
 
     <main>
-        <section class="about-us container">
+        <section class="about-us container" id="aboutus">
     <h2 class="section-title">O nas</h2>
     <div class="line"></div>
     <h3 class="section-subtitle">Najlepsi architekci wnętrz Trójmiasto</h3>
@@ -85,7 +85,7 @@
             różne
             tekstury.
         </p>
-        <button class="btn btn--portfolio">
+        <button class="btn">
             <a class="btn-link" href="#">Czytaj więcej</a>
         </button>
         <p class="about-us-info-top-text inactive">
@@ -110,7 +110,7 @@
                 <img src="/src/img/aboutusDagmara.png" alt="">
             </div>
             <div class="details-text">
-                <span class="details-signature">Dagmara Urbanowicz
+                <span class="details-signature"><strong>Dagmara Urbanowicz</strong>
                 </span>
                 <span class="details-position">
                     Architekt wnętrz
@@ -123,7 +123,7 @@
                 <img src="/src/img/aboutUsNikola.png" alt="">
             </div>
             <div class="details-text">
-                <span class="details-signature">Nikola Kleszczewska
+                <span class="details-signature"><strong>Nikola Kleszczewska</strong>
                 </span>
                 <span class="details-position">
                     Architekt wnętrz
@@ -135,9 +135,9 @@
     </div>
     <div class="about-us-info-bottom">
         <div class="line"></div>
-        <span class="section-subtitle">
+        <h4 class="section-subtitle">
             Pracujemy tylko na najnowszych wersjach programów.
-        </span>
+        </h4>
         <div class="bottom-icons">
 
             <div class="bottom-icons-card">
@@ -146,7 +146,8 @@
                 </div>
                 <p class="icon-info">
                     Dokładnie odwzorowujemy Twoją obecną przestrzeń.
-                    To właśnie tutaj powstają wszelkie rysunki techniczne, plany instalacji elektrycznej oraz hydraulicznej.
+                    To właśnie tutaj powstają wszelkie rysunki techniczne, plany instalacji elektrycznej oraz
+                    hydraulicznej.
                 </p>
             </div>
             <div class="bottom-icons-card">
@@ -154,7 +155,8 @@
                     <img src="/src/img/sketchup.png" alt="">
                 </div>
                 <p class="icon-info">
-                    Tworzymy dokładny model wyposażenia Twojej nowej przestrzeni. Możesz zobaczyć swoje nowe miejsce jeszcze przed pierwszym udeżeniem młotka.
+                    Tworzymy dokładny model wyposażenia Twojej nowej przestrzeni. Możesz zobaczyć swoje nowe miejsce
+                    jeszcze przed pierwszym udeżeniem młotka.
                 </p>
             </div>
 
@@ -169,18 +171,79 @@
             </div>
         </div>
 
-        <button class="btn btn--portfolio"><a class="btn-link" href="#">Portfolio</a>
+        <button class="btn"><a class="btn-link" href="#">Portfolio</a>
         </button>
     </div>
 </section>
-        <section class="features">
+        <section class="features" id="feature">
     <div class="container">
         <h2 class="section-title section-title--features">Najlepsze projekty wnętrz</h2>
-        <div class="first-feature">
-            <div class="hero-bg"></div>
-            <div class="hero-text">
-                <div class="circle"></div>
-                <h3>100%<br>zadowolonych klientów</h3>
+        <div class="line line--feature"></div>
+        <div class="features-box">
+            <div class="feature">
+                <div class="feature-text">
+                    <span>100% zadowolonych klientów</span>
+                </div>
+                <div class="icon-box">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-text">
+                    <span>Legalne licencje na programy</span>
+                </div>
+                <div class="icon-box">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="feature-text">
+                    <span>Niepowtarzalne projekty<span>
+                </div>
+                <div class="icon-box">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="complex" id="complex">
+    <div class="container">
+        <h2 class="section-title section-title--complex">Kompleksowe projekty wnętrz</h2>
+        <div class="line line--complex"></div>
+        <h4 class="section-subtitle">Indywidualne podejście do każdego projektu</h4>
+        <div class="complex__box">
+            <div class="complex-option">
+                <div class="complex-icon">
+                    <img class="icon-time" src="/src/img/time.png" alt="">
+                </div>
+                <div class="complex-text">
+                    <span class="complex-info">Zaoszdzędź swój czas - wszystkim się zajmiemy</span>
+                </div>
+            </div>
+            <div class="complex-option complex-option--reverse">
+                <div class="complex-icon">
+                    <img class="icon-time" src="/src/img/time.png" alt="">
+                </div>
+                <div class="complex-text">
+                    <span class="complex-info">Zaoszdzędź swój czas - wszystkim się zajmiemy</span>
+                </div>
+            </div>
+            <div class="complex-option">
+                <div class="complex-icon">
+                    <img class="icon-time" src="/src/img/time.png" alt="">
+                </div>
+                <div class="complex-text">
+                    <span class="complex-info">Zaoszdzędź swój czas - wszystkim się zajmiemy</span>
+                </div>
+            </div>
+            <div class="complex-option complex-option--reverse">
+                <div class="complex-icon">
+                    <img class="icon-time" src="/src/img/time.png" alt="">
+                </div>
+                <div class="complex-text">
+                    <span class="complex-info">Zaoszdzędź swój czas - wszystkim się zajmiemy</span>
+                </div>
             </div>
         </div>
     </div>

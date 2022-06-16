@@ -13,6 +13,7 @@
         font-weight: normal;
         font-size: $font-size-14;
         line-height: 26px;
+        margin: 20px 0;
     }
 
     &-image{
@@ -24,7 +25,7 @@
 }
 
 .about-us-info-middle{
-    margin: 20px 0;
+    margin: 40px 0px 20px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,30 +39,29 @@
     max-width: 250px;
     min-width: 150px;
     margin-bottom: 20px;
-}
 
-.details-image{
-    display: flex;
-    justify-content: center;
-
-    img{
-        width: 70%;
-        max-width: 200px;
+    &-image{
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 70%;
+            max-width: 200px;
+        }
     }
-}
 
-.details-text{
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 20px;
+    &-text{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+    }
 }
 
 .details-signature{
     text-align: center;
     font-size: $font-size-18;
-    line-height: 24px;
-    white-space: wrap;
+    line-height: 35px;
 }
 
 .details-position{
@@ -69,7 +69,6 @@
     text-align: center;
     font-size: $font-size-14;
     line-height: 24px;
-    white-space: wrap;
 }
 
 .about-us-info-bottom{
@@ -106,20 +105,33 @@
 .icon-info{
     margin-top: 20px;
     text-align: center;
-    font-size: $font-size-14;
+    font-size: $font-size-16;
     width: 80%;
 }
 
 
 @include small-up{
+
+    .about-us-info-top-text{
+        font-size: $font-size-18;
+    }
+
     .about-us-info-middle{
-    margin: 20px 0;
-    display: flex;
-    flex-direction: row;
+        margin: 20px 0;
+        flex-direction: row;
+    }
+    
+    .details-signature{
+        font-size: $font-size-21;
+    }
+
+    .details-position{
+        font-size: $font-size-18;
     }
 
     .icon-info{
         width: 50%;
+        font-size: $font-size-18;
     }
 }
 
@@ -127,9 +139,24 @@
 
     .about-us-info-top{    
         &-text{
-            font-size: $font-size-18;
+            font-size: $font-size-20;
             line-height: 35px;
         }
+    }
+
+    .about-us-info-middle{
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto;
+        max-width: 960px;
+    }
+
+    .details-signature{
+        font-size: $font-size-21;
+    }
+
+    .details-position{
+        font-size: $font-size-21;
     }
 
     .about-us-info-bottom{
@@ -155,8 +182,8 @@
     }
     
     .icon-info{
-        font-size: $font-size-18;
+        font-size: $font-size-20;
+        line-height: 35px;
         width: 80%;
-
     }
 }
